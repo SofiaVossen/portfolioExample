@@ -1,0 +1,169 @@
+/* Font: Work Sans, Didact Gothic, Fjalla One
+Farben: #9e9e9e, #fff, #000, #333, #666*/
+
+/* HEADER text and img elements*/
+header h1{
+    font-family: 'Didact Gothic';
+    text-align: center;
+    font-size: 100px;
+}
+h2{
+    font-family: 'Work Sans';
+    text-align: center;
+    font-size: 160px;
+}
+header p{
+    font-family: 'Work Sans';
+    font-size: 20px;
+    text-align: center;
+}
+header img{
+    width: 720px;
+    height: 1080px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* SECTION 1- 5 text elements*/
+section p{
+    margin-left: 20%;
+    font-family: 'Work Sans';
+    font-size: 20px;
+}
+section h1{
+    margin-left: 20%;
+    font-family: 'Work Sans';
+    font-size: 112px;
+    text-transform: uppercase;
+}
+/* BUTTONS */
+    /*2 kinds of buttons: white and black*/
+    /* 2 hover effects: black and white */
+.btnwhite {
+    margin-left: 20%;
+    margin-top: 5%;
+    font-family: 'Fjalla One';
+    font-size: 16px;
+    color: white;
+    border: 2px solid #9e9e9e;
+    width: 96px;
+    height: 52px;
+    background-color: transparent;
+    display: block;
+}
+.btnwhite:hover{
+    color:black;
+    background-color: white;
+}
+.btnblack {
+    margin-left: 20%;
+    margin-top: 5%;
+    font-family: 'Fjalla One';
+    font-size: 16px;
+    color: black;
+    border: 2px solid black;
+    width: 96px;
+    height: 52px;
+    background-color: transparent;
+    display: block;
+}
+.btnblack:hover{
+    color: white;
+    background-color: black;
+    border: none;
+}
+    /*Section Numbers affected by Button Hover*/
+    /* Section Numbers that are p elements are becoming white, Section Numbers that are div elements are becoming black */
+button + p{
+    font-family: 'Fjalla One';
+    font-size: 165px;
+    text-align: right;
+    margin-right: 20%;
+    margin-bottom: 50%;
+    opacity:2.0;
+}
+button:hover +p{
+    color: white;
+}
+div{
+    font-family: 'Fjalla One';
+    font-size: 165px;
+    text-align: right;
+    margin-right: 20%;
+    color:#9e9e9e;
+    opacity:2.0;
+}
+button:hover +div{
+    color: black;
+}
+
+/* Footer */
+footer{
+    font-size: 160px;
+    text-align: center;
+    color: black;
+    font-family: 'Didact Gothic';
+}
+/* HEART */
+.heart{
+    position:relative;
+    animation-name: heartmove;
+    animation-duration : 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-bottom: 150px;
+}
+@keyframes heartmove {
+    0%   {top: 0px;width: 20px}
+    100% {top: 50px; width: 40px;}
+}
+
+/* LINKS */
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+li a{
+    color: black;
+}
+section a {
+    margin-left: 20%;
+    font-family: 'Work Sans';
+    font-size: 20px;
+}
+/* SECTION 1-5 BACKGROUND IMAGES */
+section{
+    height: 826px;
+    padding-top: 20%;
+    line-height: 110%;
+}
+section:nth-of-type(1){
+    background-image: url("../img/portfolio2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #9e9e9e;
+}
+section:nth-of-type(2){
+    background-image: url("../img/portfolio3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:nth-of-type(3){
+    background-image: url("../img/portfolio4.jpg");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #9e9e9e;
+}
+section:nth-of-type(4){
+    background-image: url("../img/portfolio5.png");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:nth-of-type(5){
+    background-color: black;
+    background-size: cover;
+}
